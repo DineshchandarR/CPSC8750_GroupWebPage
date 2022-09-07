@@ -10,6 +10,8 @@
 <body>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    
+    <!-- Commented this out since main nav bar offers a link to Home. - CLL
     <div class="menu">
         <ul>
             <button type="button" class="button">
@@ -19,86 +21,108 @@
                 </a>    
                 </span>
 
-            </button>
+            </button> -->
             <!-- <button class=".btn"><a href="index.html">HOME</a></button> -->
             <!-- <li><a href="index.html">HOME</a></li> -->
-        </ul>
-    </div>
-    <div class="Heading">
-        <h1 style="color:#ff7200;">Design Page </h1>
-        
-    </div>
+    <!--    </ul>
+    </div> -->
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Webpage Design</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to text">
+                <a href="#"><button class="btn">Serach</button></a>
+            </div>
+        </div>
+
+        <div class="Heading" >
+            <h1 style="color:#ff7200;">Design Page </h1>   
+        </div>
 
 
-  <!-- Slide Show -->
-    <div class="SA-Designs">
-        <h2>Different types of Software Architecture Patterns</h2>
+    <!-- Slide Show -->
+        <div class="SA-Designs">
+            <h2>Different types of Software Architecture Patterns</h2>
 
-        <br>
-        <div class="services__container">
-        <div class="services__card">
-            <h2>Layered Pattern </h2>
-            <!--<p>AI Powered technology</p>-->
-            <button><a href="#popup1"> Learn More</a></button>
+            <br>
+            <div class="services__container">
+            <div class="services__card">
+                <h2>Layered Pattern </h2>
+                <!--<p>AI Powered technology</p>-->
+                <button><a href="#popup1"> Learn More</a></button>
+            </div>
+            <div class="services__card">
+                <h2>Client-Server Pattern </h2>
+                <!--<p>Take the leap</p>-->
+                <button><a href="#popup2"> Learn More</a></button>
+            </div>
+            <div class="services__card">
+                <h2>Microkernel Pattern </h2>
+                <!--<p>Take the leap</p>-->
+                <button><a href="#popup3"> Learn More</a></button>
+            </div>
+            </div>
         </div>
-        <div class="services__card">
-            <h2>Client-Server Pattern </h2>
-            <!--<p>Take the leap</p>-->
-            <button><a href="#popup2"> Learn More</a></button>
+        <div class="popup" id="popup1">
+            <div class="popup-inner">
+                <h3>Layered Pattern</h3>
+                <p>
+                    • As the name suggests, components(code) in this pattern are separated into layers of subtasks and they are arranged one above another. <br>  
+                    • Each layer has unique tasks to do and all the layers are independent of one another. Since each layer is independent, one can modify the code inside a layer without affecting others.  <br> 
+                    • It is the most commonly used pattern for designing the majority of software. This layer is also known as ‘N-tier architecture’. Basically, this pattern has 4 layers, like:<br> 
+                        a. Presentation layer (The user interface layer where we see and enter data into an application).<br> 
+                        b. Business layer (this layer is responsible for executing business logic as per the request). <br> 
+                        c. Application layer (this layer acts as a medium for communication between the ‘presentation layer’ and ‘data layer’).<br> 
+                        d. Data layer (this layer has a database for managing data).<br> 
+                        
+                Ideal for:  E-commerce web applications development like Amazon.  
+                </p>
+                <a href="#" class="button">Close</a>
+            </div>
         </div>
-        <div class="services__card">
-            <h2>Microkernel Pattern </h2>
-            <!--<p>Take the leap</p>-->
-            <button><a href="#popup3"> Learn More</a></button>
+        <div class="popup" id="popup2">
+            <div class="popup-inner">
+                <h3>Layered Pattern</h3>
+                <p>
+                    • The client-server pattern has two major entities. They are a server and multiple clients.  <br>
+                    • Here the server has resources(data, files or services) and a client requests the server for a particular resource. Then the server processes the request and responds back accordingly. <br>
+                    • Examples of software developed in this pattern:   <br>
+                        a. Email. <br>
+                        b. WWW. <br>
+                        c. File sharing apps. <br>
+                        d. Banking, etc. <br>
+                </p>
+                <a href="#" class="button">Close</a>
+            </div>
         </div>
+        <div class="popup" id="popup3">
+            <div class="popup-inner">
+                <h3>Layered Pattern</h3>
+                <p>
+                    • Microkernel pattern has two major components. They are a core system and plug-in modules. <br>
+                    • The core system handles the fundamental and minimal operations of the application.<br>
+                    • The plug-in modules handle the extended functionalities (like extra features) and customized processing.<br>
+                Let’s imagine, you have successfully built a chat application. And the basic functionality of the app is that you can text with people across the world without an internet connection. After some time, you would like to add a voice messaging feature to the application, then you are adding the feature successfully. You can add that feature to the already developed application because the microkernel pattern facilitates you to add features as plug-ins.  <br>
+                
+                Microkernel pattern is ideal for:  <br>
+                Product-based applications and scheduling applications. We love new features that keep giving dopamine boost to our brain. Such as Instagram reels, YouTube Shorts and a lot more that feasts us digitally. So this pattern is mostly preferred for app development.<br>
+                </p>
+                <a href="#" class="button">Close</a>
+            </div>
         </div>
-    </div>
-    <div class="popup" id="popup1">
-		<div class="popup-inner">
-			<h3>Layered Pattern</h3>
-			<p>
-                • As the name suggests, components(code) in this pattern are separated into layers of subtasks and they are arranged one above another. <br>  
-                • Each layer has unique tasks to do and all the layers are independent of one another. Since each layer is independent, one can modify the code inside a layer without affecting others.  <br> 
-                • It is the most commonly used pattern for designing the majority of software. This layer is also known as ‘N-tier architecture’. Basically, this pattern has 4 layers, like:<br> 
-                    a. Presentation layer (The user interface layer where we see and enter data into an application).<br> 
-                    b. Business layer (this layer is responsible for executing business logic as per the request). <br> 
-                    c. Application layer (this layer acts as a medium for communication between the ‘presentation layer’ and ‘data layer’).<br> 
-                    d. Data layer (this layer has a database for managing data).<br> 
-                    
-            Ideal for:  E-commerce web applications development like Amazon.  
-			</p>
-			<a href="#" class="button">Close</a>
-		</div>
-	</div>
-    <div class="popup" id="popup2">
-		<div class="popup-inner">
-			<h3>Layered Pattern</h3>
-			<p>
-                • The client-server pattern has two major entities. They are a server and multiple clients.  <br>
-                • Here the server has resources(data, files or services) and a client requests the server for a particular resource. Then the server processes the request and responds back accordingly. <br>
-                • Examples of software developed in this pattern:   <br>
-                    a. Email. <br>
-                    b. WWW. <br>
-                    c. File sharing apps. <br>
-                    d. Banking, etc. <br>
-			</p>
-			<a href="#" class="button">Close</a>
-		</div>
-	</div>
-    <div class="popup" id="popup3">
-		<div class="popup-inner">
-			<h3>Layered Pattern</h3>
-			<p>
-                • Microkernel pattern has two major components. They are a core system and plug-in modules. <br>
-                • The core system handles the fundamental and minimal operations of the application.<br>
-                • The plug-in modules handle the extended functionalities (like extra features) and customized processing.<br>
-            Let’s imagine, you have successfully built a chat application. And the basic functionality of the app is that you can text with people across the world without an internet connection. After some time, you would like to add a voice messaging feature to the application, then you are adding the feature successfully. You can add that feature to the already developed application because the microkernel pattern facilitates you to add features as plug-ins.  <br>
-            
-            Microkernel pattern is ideal for:  <br>
-             Product-based applications and scheduling applications. We love new features that keep giving dopamine boost to our brain. Such as Instagram reels, YouTube Shorts and a lot more that feasts us digitally. So this pattern is mostly preferred for app development.<br>
-			</p>
-			<a href="#" class="button">Close</a>
-		</div>
-	</div>
+    <div class="main"></div>
 </body>
 </html>
